@@ -32,7 +32,7 @@ header {
 header > h1 {
     font-family: var(--fonte02);
     font-weight: normal;
-    font-size: 15vw;
+    font-size: max(10vw, 60px);
     font-variant: small-caps;
 
     padding-top: 50px;
@@ -59,19 +59,21 @@ header a:hover {
 section {
     font-family: var(--fonte03);
     font-weight: normal;
-    font-size: 4.5vw;
+    font-size: max(3.5vw, 16px);
     line-height: 2em;
-    padding: 30px
+    padding-top: 10vh;
+    padding-left: 30px;
+    padding-bottom: 10vh;
+}
+
+
+section > p {
+    padding-bottom: min(90px, 5%);
 }
 
 
 section.normal {
     background-color: white;
-}
-
-
-section > p {
-    padding-bottom: 85px;
 }
 
 
@@ -83,9 +85,8 @@ section.imagem {
 
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.315);
-    max-width: 50vw;
-    font-size: 4.5vw;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.295);
     padding: 5px;
 }
 
